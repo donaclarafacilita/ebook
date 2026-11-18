@@ -1,7 +1,12 @@
 <!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>100 receitas para o dia a dia | Dona Clara Facilita</title>
-<meta name="description" content="E-book em PDF com 100 receitas fáceis e fora do básico para almoço, jantar, lanches e doces, com ingredientes e passo a passo.">
+<meta name="description" content="Cansada de inventar o cardápio do almoço e do jantar? E-book em PDF com 100 receitas fáceis e fora do básico, com ingredientes em lista e preparo numerado.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="100 receitas para o dia a dia, da Dona Clara">
+<meta property="og:description" content="Chega de pensar no cardápio todo dia: 100 receitas fáceis num e-book só, para abrir no celular.">
+<meta property="og:image" content="https://donaclarafacilita.github.io/ebook/img/capa.jpg">
+<meta property="og:url" content="https://donaclarafacilita.github.io/ebook/">
 <meta name="theme-color" content="#1F7A7A">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
@@ -11,23 +16,34 @@
 body{margin:0;background:var(--creme);color:var(--marinho);font:500 17px/1.55 Nunito,'Segoe UI',Arial,sans-serif;padding-bottom:24px}
 main{max-width:560px;margin:0 auto;padding:0 18px}
 h1,h2,h3{font-family:'Baloo 2',Nunito,sans-serif;line-height:1.08;margin:0;font-weight:800}
-h1{font-size:36px}h2{font-size:28px;margin-bottom:12px}h3{font-size:20px}
+h1{font-size:34px}h2{font-size:28px;margin-bottom:12px}h3{font-size:20px}
 p{margin:0 0 12px}a{color:inherit}
 section{padding:34px 0;border-top:3px dotted #1B3A5733}section:first-of-type{border-top:0}
-.topo{padding:26px 0 30px;text-align:center}
+.topo{padding:24px 0 30px;text-align:center}
 .marca{display:inline-block;font-weight:800;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--petroleo);margin-bottom:10px}
-.topo h1 mark{background:linear-gradient(transparent 60%,#F2B33D88 60%);color:inherit}
+.topo h1 mark,h2 mark{background:linear-gradient(transparent 60%,#F2B33D88 60%);color:inherit}
 .sub{font-size:18px;margin:14px auto 18px;max-width:440px}
 .capa{width:min(70%,300px);height:auto;margin:6px auto 20px;display:block;border-radius:14px;border:3px solid var(--marinho);box-shadow:0 8px 0 var(--marinho)}
-.cta{display:block;text-align:center;background:var(--coral);color:var(--branco);text-decoration:none;font:800 19px 'Baloo 2',Nunito,sans-serif;padding:15px 20px;border-radius:999px;border:3px solid var(--marinho);box-shadow:0 5px 0 var(--marinho)}
+.cta{display:block;text-align:center;background:var(--coral);color:var(--branco);text-decoration:none;font:800 20px 'Baloo 2',Nunito,sans-serif;padding:15px 20px;border-radius:999px;border:3px solid var(--marinho);box-shadow:0 5px 0 var(--marinho)}
 .cta:active{transform:translateY(3px);box-shadow:0 2px 0 var(--marinho)}
+.selos{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 14px;margin-top:14px;font-size:14px;font-weight:800}
+.selos span:before{content:"✓ ";color:var(--petroleo)}
 .micro{font-size:14px;font-weight:700;opacity:.8;text-align:center;margin-top:12px}
-.cena{background:var(--branco);border:3px solid var(--marinho);border-radius:20px;padding:18px;box-shadow:0 5px 0 var(--marinho)}
 .lista{list-style:none;padding:0;margin:0}.lista li{position:relative;padding:10px 0 10px 34px;border-bottom:1px dashed #1B3A5733}
 .lista li:last-child{border-bottom:0}.lista li:before{content:"";position:absolute;left:4px;top:17px;width:14px;height:14px;border-radius:50%;background:var(--mostarda);border:3px solid var(--marinho)}
+.dor li:before{content:"✕";background:none;border:0;width:auto;height:auto;top:9px;left:6px;color:var(--coral);font-weight:800}
+.antes-depois{display:grid;gap:12px}
+.ad{border:3px solid var(--marinho);border-radius:18px;padding:14px 16px;background:var(--branco)}
+.ad b{display:block;font:800 15px Nunito,sans-serif;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+.ad.antes b{color:var(--coral)}.ad.depois{background:#DFF1EC}.ad.depois b{color:var(--petroleo)}
 .numeros{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:6px 0 16px}
 .numeros div{background:var(--petroleo);color:var(--branco);border:3px solid var(--marinho);border-radius:16px;text-align:center;padding:10px 4px;font-weight:800;font-size:13px;line-height:1.2}
 .numeros b{display:block;font:800 32px 'Baloo 2',sans-serif;color:var(--mostarda)}
+.caps{list-style:none;padding:0;margin:0 0 6px;display:grid;gap:8px}
+.caps li{display:flex;justify-content:space-between;gap:12px;background:var(--branco);border:2px solid var(--marinho);border-radius:12px;padding:8px 12px;font-weight:700;font-size:15px}
+.caps li span{white-space:nowrap;color:var(--petroleo);font-weight:800}
+.pratos{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.pratos span{background:var(--creme2);border:2px solid var(--marinho);border-radius:999px;padding:4px 12px;font-size:14px;font-weight:700}
 .amostras{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:10px -18px 0;padding:6px 18px 14px}
 .amostras figure{flex:0 0 72%;max-width:300px;margin:0;scroll-snap-align:center}
 .amostras img{width:100%;height:auto;display:block;border-radius:12px;border:3px solid var(--marinho);background:var(--branco)}
@@ -36,6 +52,10 @@ section{padding:34px 0;border-top:3px dotted #1B3A5733}section:first-of-type{bor
 .oferta h2{color:var(--mostarda)}.oferta ul{list-style:none;padding:0;margin:14px 0;text-align:left}.oferta li{padding:5px 0 5px 26px;position:relative}
 .oferta li:before{content:"✓";position:absolute;left:2px;color:var(--mostarda);font-weight:800}
 .preco{font:800 52px 'Baloo 2',sans-serif;line-height:1;color:var(--branco);margin:10px 0 2px}.oferta .pg{font-size:15px;font-weight:700;opacity:.92;margin-bottom:16px}
+.garantia{display:flex;gap:16px;align-items:center;background:var(--branco);border:3px solid var(--marinho);border-radius:20px;padding:18px;box-shadow:0 5px 0 var(--marinho)}
+.garantia .selo{flex:none;width:86px;height:86px;border-radius:50%;background:var(--mostarda);border:4px solid var(--marinho);display:flex;flex-direction:column;align-items:center;justify-content:center;font:800 30px/1 'Baloo 2',sans-serif;text-align:center}
+.garantia .selo small{font:800 11px Nunito,sans-serif;letter-spacing:.06em}
+.garantia h3{margin-bottom:6px}.garantia p{margin:0;font-size:15px}
 details{background:var(--branco);border:3px solid var(--marinho);border-radius:16px;margin:0 0 10px;padding:0 16px}
 summary{cursor:pointer;font-weight:800;padding:14px 0;list-style:none}summary::-webkit-details-marker{display:none}
 summary:after{content:"+";float:right;color:var(--coral);font-size:22px;line-height:1}details[open] summary:after{content:"–"}
@@ -46,24 +66,50 @@ footer{padding:26px 0 10px;text-align:center;font-size:14px;opacity:.85}
 
 <section class="topo">
 <span class="marca">Dona Clara Facilita</span>
-<h1>Sem ideia do que cozinhar hoje? <mark>100 receitas</mark> prontas para escolher.</h1>
-<p class="sub">E-book em PDF com 100 receitas para almoço, jantar, lanches e doces. Ingredientes em lista, preparo numerado e uma ilustração em cada prato.</p>
-<img class="capa" src="img/capa.jpg" alt="Capa do e-book Dona Clara Facilita, 100 receitas para o dia a dia, com a personagem Dona Clara e pratos ilustrados" width="720" height="1080">
-<a class="cta" href="https://pay.cakto.com.br/zk27ng4">Quero o e-book</a>
-<p class="micro">E-book digital em PDF. Você recebe o acesso por e-mail depois da compra.</p>
+<h1>Cansada de inventar o cardápio do almoço e do jantar? Escolha entre <mark>100 receitas</mark> prontas.</h1>
+<p class="sub">Um e-book em PDF com 100 receitas fáceis e fora do básico para almoço, jantar, lanches e doces. Você abre no celular e escolhe o prato de hoje sem procurar.</p>
+<img class="capa" src="img/capa.jpg" alt="Capa do e-book Dona Clara Facilita, 100 receitas para o dia a dia, com a personagem Dona Clara e pratos ilustrados" width="720" height="1077">
+<a class="cta" href="#oferta">Quero minhas 100 receitas</a>
+<div class="selos"><span>PDF para o celular</span><span>Pagamento único</span><span>Garantia de 7 dias</span></div>
 </section>
 
 <section>
 <h2>A pergunta de todo dia</h2>
-<p>São cinco da tarde e a pergunta volta: o que vai ser hoje? Você abre o celular, acha dezenas de receitas soltas, em sites diferentes, com instruções que cortam no meio, e acaba fazendo de novo o que já faz de sempre.</p>
-<p>O e-book da Dona Clara junta tudo em um só arquivo: receitas escolhidas por serem fáceis e saírem do básico, no mesmo formato, com o que você precisa na página.</p>
+<p>São cinco da tarde e a pergunta volta: o que vai ser hoje? Aí começa a maratona:</p>
+<ul class="lista dor">
+<li>Você procura no celular e acha receita espalhada em dez sites diferentes.</li>
+<li>Tem anúncio no meio do preparo e a página some quando a tela apaga.</li>
+<li>No fim, cansada, você faz o mesmo prato de sempre.</li>
+</ul>
+<p style="margin-top:12px">O e-book da Dona Clara junta tudo num arquivo só: receitas escolhidas por serem fáceis e saírem do básico, no mesmo formato, com tudo o que você precisa na página.</p>
 </section>
 
 <section>
-<h2>O que tem dentro</h2>
+<h2>O que muda na sua cozinha</h2>
+<div class="antes-depois">
+<div class="ad antes"><b>Antes</b>Abrir a geladeira sem ideia, procurar receita por meia hora e repetir o cardápio da semana.</div>
+<div class="ad depois"><b>Com o e-book</b>Abrir o sumário, tocar no capítulo e escolher entre pratos de frango, carne, legumes, massas, sopas, lanches e doces.</div>
+<div class="ad depois"><b>Com o e-book</b>Saber antes de começar quanto rende, quanto tempo leva e o que precisa comprar.</div>
+</div>
+<a class="cta" href="#oferta" style="margin-top:20px">Quero minhas 100 receitas</a>
+</section>
+
+<section>
+<h2>O que tem <mark>dentro</mark></h2>
 <div class="numeros"><div><b>60</b>almoço e jantar</div><div><b>20</b>lanches e café</div><div><b>20</b>doces</div></div>
-<ul class="lista">
-<li><b>100 receitas</b> organizadas em 8 capítulos, de frango e carnes a acompanhamentos, sopas, lanches e sobremesas.</li>
+<ul class="caps">
+<li>1. Frango <span>12 receitas</span></li>
+<li>2. Carne moída e outras carnes <span>10 receitas</span></li>
+<li>3. Ovos, legumes e refeições sem carne <span>10 receitas</span></li>
+<li>4. Acompanhamentos com diferencial <span>10 receitas</span></li>
+<li>5. Massas e pratos de uma panela <span>10 receitas</span></li>
+<li>6. Sopas, tortas salgadas e outros jantares <span>8 receitas</span></li>
+<li>7. Lanches e café da manhã <span>20 receitas</span></li>
+<li>8. Doces e sobremesas <span>20 receitas</span></li>
+</ul>
+<h3 style="margin:18px 0 6px">Alguns pratos que você vai encontrar</h3>
+<div class="pratos"><span>Medalhão de frango com bacon</span><span>Frango à pizzaiolo</span><span>Carne de panela ao molho de vinho</span><span>Escondidinho de carne moída com mandioquinha</span><span>Berinjela à milanesa de forno</span><span>Macarrão de panela de pressão com carne</span><span>Sopa cremosa de milho com frango</span><span>Pão de queijo de frigideira com tomate</span><span>Pudim de banana caramelada</span><span>Cocada queimada cremosa</span></div>
+<ul class="lista" style="margin-top:16px">
 <li><b>Sumário clicável:</b> toque no capítulo, depois no nome da receita, e você chega direto nela.</li>
 <li><b>Ingredientes em lista</b>, com a quantidade em destaque, para conferir o que falta antes de começar.</li>
 <li><b>Modo de preparo numerado</b>, na ordem em que as coisas acontecem.</li>
@@ -77,17 +123,11 @@ footer{padding:26px 0 10px;text-align:center;font-size:14px;opacity:.85}
 <h2>Dê uma olhada por dentro</h2>
 <p>Estas são páginas reais do e-book. Deslize para ver.</p>
 <div class="amostras">
-<figure><img src="img/receita-ficha.jpg" alt="Página de abertura de uma receita, com ilustração do prato, rendimento e tempo total" loading="lazy"><figcaption>Cada receita abre com o prato, o rendimento e o tempo.</figcaption></figure>
-<figure><img src="img/receita-preparo.jpg" alt="Página de uma receita com a lista de ingredientes e o modo de preparo numerado" loading="lazy"><figcaption>Ingredientes e preparo juntos, na mesma página.</figcaption></figure>
-<figure><img src="img/doce-ficha.jpg" alt="Página de abertura de uma receita de sobremesa" loading="lazy"><figcaption>Tem lanche e sobremesa também.</figcaption></figure>
-<figure><img src="img/sumario.jpg" alt="Sumário do e-book, com os capítulos e a quantidade de receitas de cada um" loading="lazy"><figcaption>O sumário leva você direto à receita.</figcaption></figure>
+<figure><img src="img/receita-ficha.jpg" alt="Página de abertura de uma receita, com ilustração do prato, rendimento e tempo total" loading="lazy" width="560" height="838"><figcaption>Cada receita abre com o prato, o rendimento e o tempo.</figcaption></figure>
+<figure><img src="img/receita-preparo.jpg" alt="Página de uma receita com a lista de ingredientes e o modo de preparo numerado" loading="lazy" width="560" height="838"><figcaption>Ingredientes e preparo juntos, na mesma página.</figcaption></figure>
+<figure><img src="img/doce-ficha.jpg" alt="Página de abertura de uma receita de sobremesa" loading="lazy" width="560" height="838"><figcaption>Tem lanche e sobremesa também.</figcaption></figure>
+<figure><img src="img/sumario.jpg" alt="Sumário do e-book, com os capítulos e a quantidade de receitas de cada um" loading="lazy" width="560" height="838"><figcaption>O sumário leva você direto à receita.</figcaption></figure>
 </div>
-</section>
-
-<section>
-<h2>Por que ter as receitas num livro só</h2>
-<p>Receita grátis na internet não falta, e muita é boa. O que costuma faltar é achar rápido, no mesmo padrão, sem anúncio no meio e sem perder a página quando o celular apaga a tela.</p>
-<p>Este e-book não promete que todo prato vai sair perfeito nem substitui a sua experiência na cozinha. Ele é um jeito organizado de escolher o que fazer e acompanhar o preparo com clareza.</p>
 </section>
 
 <section>
@@ -103,11 +143,15 @@ footer{padding:26px 0 10px;text-align:center;font-size:14px;opacity:.85}
 <section id="oferta">
 <div class="oferta">
 <h2>Dona Clara Facilita, 100 receitas para o dia a dia</h2>
-<ul><li>E-book em PDF com 100 receitas</li><li>60 de almoço e jantar, 20 de lanches e café da manhã, 20 de doces</li><li>Acesso por e-mail depois da confirmação do pagamento</li><li>Pagamento único, sem mensalidade</li></ul>
+<ul><li>E-book em PDF com 100 receitas</li><li>60 de almoço e jantar, 20 de lanches e café da manhã, 20 de doces</li><li>8 capítulos e sumário clicável</li><li>Acesso por e-mail depois da confirmação do pagamento</li><li>Garantia de 7 dias</li></ul>
 <div class="preco">R$ 24,90</div>
-<p class="pg">Pagamento único pela Cakto.</p>
-<a class="cta" href="https://pay.cakto.com.br/zk27ng4">Quero o e-book</a>
-<p class="micro" style="color:#fff">Reembolso em até 7 dias corridos após a compra, pelo canal da Cakto.</p>
+<p class="pg">Pagamento único, sem mensalidade. Dá menos de 25 centavos por receita.</p>
+<a class="cta" href="https://pay.cakto.com.br/zk27ng4">Quero minhas 100 receitas</a>
+<p class="micro" style="color:#fff">Pagamento pela Cakto.</p>
+</div>
+<div class="garantia" style="margin-top:22px">
+<div class="selo">7<small>DIAS</small></div>
+<div><h3>Garantia de 7 dias</h3><p>Se você se arrepender ou achar que o e-book não é para você, peça o reembolso em até 7 dias corridos depois da compra, pelo canal da Cakto, e recebe o seu dinheiro de volta.</p></div>
 </div>
 </section>
 
@@ -116,15 +160,17 @@ footer{padding:26px 0 10px;text-align:center;font-size:14px;opacity:.85}
 <details><summary>É um livro físico?</summary><p>Não. É um e-book digital em PDF. Não há envio pelo correio.</p></details>
 <details><summary>Como eu recebo?</summary><p>Depois da confirmação do pagamento, o acesso chega no e-mail usado na compra. Se não encontrar, olhe a caixa de spam.</p></details>
 <details><summary>Dá para ler no celular?</summary><p>Dá. O PDF foi montado em página vertical, com letra confortável para a tela do celular. Também abre no computador.</p></details>
+<details><summary>As receitas são difíceis?</summary><p>Não. Foram escolhidas por serem fáceis e usarem ingredientes comuns, com um toque fora do básico. Cada uma mostra o tempo total, para você escolher conforme o dia.</p></details>
 <details><summary>Preciso de equipamentos especiais?</summary><p>Cada receita informa os utensílios que usa logo no início. As receitas usam o que normalmente existe numa cozinha de casa, como panelas, frigideira e forno, conforme a receita.</p></details>
-<details><summary>Quais tipos de receita tem?</summary><p>São 60 receitas de almoço e jantar, 20 de lanches e café da manhã e 20 de doces e sobremesas, em 8 capítulos.</p></details>
+<details><summary>Tem mensalidade?</summary><p>Não. O pagamento é único e o e-book fica com você.</p></details>
 <details><summary>E se eu não gostar?</summary><p>Você pode pedir reembolso em até 7 dias corridos após a compra, pelo canal de reembolso da Cakto: reembolso.cakto.com.br.</p></details>
 </section>
 
 <section>
-<h2>Cozinhar fica mais leve com o caminho à vista</h2>
+<h2>Hoje, o jantar já pode ter resposta</h2>
 <p>Se a pergunta de todo dia é "o que vai ser hoje?", o e-book responde com 100 opções no mesmo lugar.</p>
-<a class="cta" href="https://pay.cakto.com.br/zk27ng4">Quero o e-book</a>
+<a class="cta" href="https://pay.cakto.com.br/zk27ng4">Quero minhas 100 receitas</a>
+<div class="selos"><span>Pagamento único</span><span>Garantia de 7 dias</span></div>
 </section>
 
 <footer>
@@ -132,4 +178,9 @@ footer{padding:26px 0 10px;text-align:center;font-size:14px;opacity:.85}
 <p>As ilustrações são desenhos e representam os pratos. Não são fotografias de preparos.</p>
 </footer>
 </main>
+<script>
+// Repassa a origem do anúncio (utm_* e fbclid) para o checkout da Cakto, para saber de onde veio a venda.
+(function(){try{var q=new URLSearchParams(location.search),p=[];q.forEach(function(v,k){if(/^utm_/.test(k)||k==="fbclid")p.push([k,v])});if(!p.length)return;
+document.querySelectorAll('a[href^="https://pay.cakto.com.br"]').forEach(function(a){var u=new URL(a.href);p.forEach(function(x){u.searchParams.set(x[0],x[1])});a.href=u.toString()})}catch(e){}})();
+</script>
 </body></html>
